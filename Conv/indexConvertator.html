@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel='stylesheet' href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="cssConvertator.css">
+    
+</head>
+
+<body>
+    <div id='maindiv'>
+        <input id='sum' type="number" placeholder="Введите сумму валюты">
+        <div class="btn-group firstMenu">
+            <button type="button" class="btn btn-default dropdown-toggle qwert" data-toggle="dropdown"><span class="moneytext">Выберите действия</span><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu z">
+                <li><a href="#" class='rubBuy'><span>Купить RUB</span></a></li>
+                <li><a href="#" class="rubSold">Продать RUB</a></li>
+                 <li role="separator" class="divider"></li>
+                <li><a href="#" class="eurBuy">Купить EUR</a></li>
+                <li><a href="#" class="eurSold">Продать EUR</a></li>
+                 <li role="separator" class="divider"></li>
+                <li><a href="#" class="usdBuy">Купить USD</a></li>
+                <li><a href="#" class="usdSold">Продать USD</a></li>
+                 <li role="separator" class="divider"></li>
+                <li><a href="#" class="btc">BTC</a></li>
+            </ul>
+        </div>
+        <!--<input type="button" value="Результат" id="get">-->
+        <div class="result"></div>
+        <input type="button" value="Перевести в грн" class="get">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="mainConvertator.js" onload=""></script>
+</body>
+
+</html>

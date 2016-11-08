@@ -1,0 +1,16 @@
+#maindiv{
+    display: inline;
+}
+#sum{
+    width: 170px;
+}
+.text{
+    display: inline;
+}
+.result{
+    position: relative;
+    display: inline-block;
+}
+.get{
+    visibility: hidden;
+}
