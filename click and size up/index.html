@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script>
+       $(document).ready($(document).on('click','div',function x (event){
+        var width = Number(event.target.style.width.substring(0,event.target.style.width.length - 2 ))
+        event.target.style.width = width + 40 + 'px';     
+    }));
+    </script>
+</head>
+<body>
+<div style="background-color: red; height: 100px; width:100px"></div>
+<div style="background-color: green; height: 100px; width:100px"></div>
+<div style="background-color: blue; height: 100px; width:100px"></div>
+
+
+    
+</body>
+</html>
