@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel='stylesheet' href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div>
+                    <button class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-sm">Add contact</button> <!-- data target - отвечает по какой кнопке будет вызыватся окно-->
+                </div>
+                <div>
+                    <ol class="contactList">
+
+                    </ol>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <form>
+                            <div class="form-group usernameLabel">
+                                <label>Username</label>
+                                <input type="text" id="username" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group emailLabel">
+                                <label>Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="email">
+                            </div>
+                            <div class="form-group telLabel">
+                                <label>Number</label>
+                                <input type="tel" id="tel" class="form-control" placeholder="Phone number required">
+                            </div>
+                            <button type="button" class="btn btn-default" id="addContact">Add contact</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Small кнопка из бутстрапа/ Всплывающее окно 
+        Ниже Отправка мессенджа
+        -->
+        <div class="modal fade bs-message-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <form>
+                            <textarea class="usermassage form-control"></textarea>
+                            <p class="msg-status"></p>
+                            <button type="button" class="btn btn-default sendsms">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bs-phone-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body cellphone">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <p class="phone-status"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src='jquery-3.1.1.js'></script>
+    <script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="mainjs.js"></script>
+</body>
+
+</html>

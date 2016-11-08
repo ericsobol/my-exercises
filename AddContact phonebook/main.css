@@ -1,0 +1,26 @@
+.usercall{
+    color: green;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.userdel{
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.usersms{
+margin-left: 10px;
+    color: blue;
+    cursor: pointer;
+}
+.errorForm{
+    color: red;
+    text-align: center;
+}
+.contactList{
+    margin-top: 10px;
+}
+.phone-status{
+    text-align: center;
+}
+
